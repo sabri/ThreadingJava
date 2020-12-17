@@ -6,11 +6,12 @@ public class SupervisorExample {
         Worker2 worker2 = new Worker2();
         try {
             worker1.executeWork();
+            worker2.executeWork();
+
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
 
-        worker2.executeWork();
 
 
     }
